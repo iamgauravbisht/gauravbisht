@@ -371,22 +371,33 @@ export default async function BlogPage({ params }: Props) {
 
           <div
             className="
-              prose
-              prose-lg
-              max-w-none
-              prose-headings:font-semibold
-              prose-headings:tracking-tight
-              prose-p:leading-8
-              prose-a:text-black
-              prose-a:underline
-              prose-strong:text-black
-              prose-code:rounded
-              prose-code:bg-gray-100
-              prose-code:px-1.5
-              prose-code:py-0.5
-              prose-code:text-sm
-              prose-code:before:content-none
-              prose-code:after:content-none
+                prose
+                prose-lg
+                max-w-none
+                prose-headings:font-semibold
+                prose-headings:tracking-tight
+                prose-p:leading-8
+                prose-a:text-black
+                prose-a:underline
+                prose-strong:text-black
+
+                prose-code:rounded
+                prose-code:bg-gray-100
+                prose-code:px-1.5
+                prose-code:py-0.5
+                prose-code:text-sm
+                prose-code:text-gray-800
+                prose-code:before:content-none
+                prose-code:after:content-none
+
+                prose-pre:overflow-x-auto
+                prose-pre:rounded-xl
+                prose-pre:bg-gray-900
+                prose-pre:text-gray-100
+
+                [&_pre_code]:bg-transparent
+                [&_pre_code]:p-0
+                [&_pre_code]:text-gray-100
             "
             dangerouslySetInnerHTML={{
               __html: contentHtml,
